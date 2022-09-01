@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+.main-body{
+  position: fixed;
+  display: block;
+}
+
+.content-body{
+  background: violet;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100vw;
+  height: 85vh;
+}
+
+
+.main-content{
+  background: red;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  width: 90vw;
+  height: 85%;
+  padding: 3vh 3%;
+  margin: 2vh 5vw;
+  max-width: 420px;
+  margin-bottom: 7vh;
+}
+
+.head-counter{
+  background: #00ff00;
+  position: relative;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
+  width: 100%;
+  flex: 0;
+}
+
+.count-btn-body{
+  background: yellow;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  
+}
+.count-ipt{
+  background: none;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  font-size: 3em;
+}
+.count-btn{
+  background: transparent;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+}
+
+.clear-btn-body{
+  background: blue;
+  font-size: 1.5em;
+  bottom: 0;
+  width: 100%;
+  flex: 0;
+}
+
+.footer{
+  background: #303030;
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  bottom: 0;
+  color: #FFFFFF;
+  justify-content: center;
+}
+
+.footer p{
+  margin: 3px;
+}
+
+.footer p a{
+  text-decoration: none;
+}
