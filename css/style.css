@@ -69,7 +69,6 @@ body{
 }
 
 .count-btn-body{
-  background: yellow;
   position: relative;
   display: flex;
   justify-content: center;
@@ -92,7 +91,6 @@ body{
   width: 90%;
   height: 90%;
   border: none;
-  overflow: hidden;
 }
 
 .clear-btn-body{
@@ -138,20 +136,22 @@ body{
 
 span{
   position: absolute;
-  background: #fff;
+  background: #AFB6FE;
   transform: translate(-50%,-50%);
   pointer-events: none;
   border-radius: 50%;
-  animation: animate 1s linear infinite;
+  animation: animate .3s linear infinite;
 }
 @keyframes animate{
   0%{
     width: 0px;
     height: 0px;
+    opacity: 0.5;
   }
   100%{
     width: 500px;
     height: 500px;
+    opacity: .0;
   }
 }
 

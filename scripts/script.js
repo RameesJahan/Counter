@@ -24,8 +24,8 @@ count_btn.addEventListener('click',function(e){
    ripples.style.top = y + 'px';
    this.appendChild(ripples);
    
-   setTimeOut(() => {
+   window.setTimeout(() => {
      ripples.remove();
      console.log('ripples removed')
-   },1000);
+   },300);
 });
