@@ -76,6 +76,8 @@ body{
   width: 100%;
   flex: 1;
   
+  border: solid 5px #b374ff;
+  border-radius: 15px;
 }
 .count-ipt{
   background: none;
@@ -87,7 +89,7 @@ body{
 }
 .count-btn{
   background: none;
-  position: absolute;
+  position: relative;
   width: 90%;
   height: 90%;
   border: none;
@@ -128,20 +130,14 @@ body{
 
 .footer p{
   margin: 3px;
+  margin-bottom: 2vh;
 }
 
 .footer p a{
   text-decoration: none;
 }
 
-span{
-  position: absolute;
-  background: #AFB6FE;
-  transform: translate(-50%,-50%);
-  pointer-events: none;
-  border-radius: 50%;
-  animation: animate .3s linear infinite;
-}
+
 @keyframes animate{
   0%{
     width: 0px;
@@ -170,3 +166,34 @@ span{
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+/* Ripple Effect */
+
+/*
+*****Method 1*****
+span{
+  position: absolute;
+  background: #AFB6FE;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate .3s linear infinite;
+}*/
+
+/****Method 2*****/
+span.ripple {
+  background: #AFB6FE;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  /*background-color: rgba(255, 255, 255, 0.7);*/
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+
+/*******************/
