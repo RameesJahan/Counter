@@ -75,7 +75,7 @@ body{
   align-items: center;
   width: 100%;
   flex: 1;
-  
+  overflow: hidden;
   border: solid 5px #b374ff;
   border-radius: 15px;
 }
